@@ -12,7 +12,7 @@ namespace HairSalon.Controllers
   {
     private readonly HairSalonContext _db;
 
-    public ClientsController(BestClientContext db)
+    public ClientsController(HairSalonContext db)
     {
       _db = db;
     }
@@ -22,7 +22,6 @@ namespace HairSalon.Controllers
         List<Client> model = _db.Clients.Include(clients => clients.Stylist).ToList();
         return View(model);
     }
-
 
     public ActionResult Create()
     {
