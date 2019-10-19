@@ -16,30 +16,19 @@ An MVC web app for a Hair Salon to store stylists and assign clients to them. Bu
   - follow the database specs for more details on the columns in each table
 - enter 'dotnet watch run' from 'HairSalon' project folder
 
-## Specs
-
-| Behavior | Input | Output | 
-|-|-|-|
-| As the salon owner, I need to be able to see a list of all stylists.| | |
-| As the salon owner, I need to be able to select a stylist, see their details, and see a list of all clients that belong to that stylist.| | |
-| As the salon owner, I need to add new stylists to our system when they are hired.| | |
-| As the salon owner, I need to be able to add new clients to a specific stylist. I should not be able to add a client if no stylists have been added.| | |
-| | | |
-| | | | 
-
 ## Sample Database
 
 Here is a sample database:
 
 database name: loewy_malkovich
+| Table | 'stylists' | 
+|-|-|
+| Columns |   StylistId (PK, NN, AI), Name, Details   |
 
+|    Table   |   'clients'        |
+|-|-|
+|     Columns  |     ClientId(PK, NN, AI), StylistId (PK, NN), Name       |
 
-| | | |
-| Table | 'stylists' |   Row    |
-| Columns |   StylistId     |         |
-|       |            |
-|       |            |
-|       |            |
 
 ## Technologies used
 
